@@ -10,7 +10,7 @@ const ItemSchema = new Schema({
     type: String,
     required: true
   },
-  regiãa: {
+  regiao: {
     type: String,
     required: true
   },
