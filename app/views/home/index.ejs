@@ -11,14 +11,14 @@
 
 <body>
     <div class="jumbotron">
-        <h1 class="display-4">Nome do Bang</h1>
-        <p class="lead">TAlguma breve descrição.</p>
+        <h1 class="display-4">Casos Confirmados</h1>
+        <p class="lead">Relação de infectados pelo vírus Louro-José.</p>
         <hr class="my-4">
          
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-            Launch demo modal
+            Registrar Caso
         </button>
-
+	<a href="/cadastrados" class="btn">Casos Confirmados</a>
         <!-- Modal -->
         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
@@ -45,15 +45,15 @@
                                 </div>
                                 <div class="form-group">
                                     
-                                        <label>Telefone
-                                            <input type="number" name="tel" id="tel" placeholder="(00) 0000-0000"  class="form-control" required> </label>
+                                        <label>Idade
+                                            <input type="number" name="idade" id="idade"  class="form-control" required> </label>
+                                    <label>Região
+                                            <input type="text" name="regiao" id="regiao"  class="form-control" required> </label>
                                     
                                 </div>
                                 <input type="submit" class="btn btn-light" value="Cadastrar">
                                 <div class="text-center">
-                                    <small> 
-					<a href="/cadastrados" class="text-muted">Users Cadastrados</a>
-				</small>
+                                    
                                 </div>
                             </form>
                         </div>
