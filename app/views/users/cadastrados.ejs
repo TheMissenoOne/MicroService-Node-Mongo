@@ -15,6 +15,57 @@
         <p class="lead">Relação de infectados pelo vírus Louro-José.</p>
         <hr class="my-4">
         <h4><b>Casos Cadastrados</b></h4>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+            Registrar Caso
+        </button>
+	<a href="/cadastrados" class="btn">Casos Confirmados</a>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                            <h4> <b>Cadastre-se Conosco</b> </h4>
+                            <form autocomplete="off" method="post" action="/item/add">
+                                <div class="form-group">
+                                    
+                                        <label>Nome
+                                            <input type="text" name="nome" id="nome" placeholder="Seu Nome" class="form-control" required> </label>
+                                    
+                                </div>
+                                <div class="form-group">
+                                        <label>Doc
+                                            <input type="number" name="cpf" id="cpf" placeholder="000.000.000-00"  class="form-control" required> </label>
+                                    
+                                </div>
+                                <div class="form-group">
+                                    
+                                        <label>Idade
+                                            <input type="number" name="idade" id="idade"  class="form-control" required> </label>
+                                    <label>Região
+                                            <input type="text" name="regiao" id="regiao"  class="form-control" required> </label>
+                                    
+                                </div>
+                                <input type="submit" class="btn btn-light" value="Cadastrar">
+                                <div class="text-center">
+                                    
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <ul>
             <% items.forEach(function(item) { %>
                 <li>
