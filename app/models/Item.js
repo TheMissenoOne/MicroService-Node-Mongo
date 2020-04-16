@@ -6,25 +6,17 @@ const ItemSchema = new Schema({
     type: String,
     required: true
   },
-  sobrenome: {
-    type: String,
-    required: true
-  },
   cpf: {
     type: String,
     required: true
   },
-  cep: {
+  regiãa: {
     type: String,
     required: true
   },
-  tel: {
-    type: String,
+  idade: {
+    type: int,
     required: true
-  },
-  date: {
-    type: Date,
-    default: Date.now
   }
 });
 
