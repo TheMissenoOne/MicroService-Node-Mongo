@@ -1,3 +1,5 @@
+ 
+const Item = require('../models/Item');
 module.exports = function(express){
     express.get('/', function(req, res){
                 Item.find()
