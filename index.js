@@ -11,7 +11,7 @@ express.post('/item/add', (req, res) => {
     idade: req.body.idade
   });
 
-  newItem.save().then(item => res.redirect('/'));
+  newItem.save().then(item => res.redirect('/cadastrados'));
 });
 
 express.listen(8080, () => console.log('Server running...'));
