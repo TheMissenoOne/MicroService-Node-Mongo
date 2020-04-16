@@ -15,7 +15,7 @@ const ItemSchema = new Schema({
     required: true
   },
   idade: {
-    type: Integer,
+    type: Double,
     required: true
   }
 });
